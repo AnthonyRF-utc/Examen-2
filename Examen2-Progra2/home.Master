@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="home.master.cs" Inherits="Examen2_Progra2.home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/menucss.css" rel="stylesheet" />
+    <link href="css/Gridviewcss.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div>
+                <nav class="skew-menu">
+                  <ul>
+                    <li><a href="Inicio.aspx">Inicio</a></li>
+                    <li><a href="Usuarios.aspx">Usuarios</a></li>
+                    <li><a href="Tecnicos.aspx">Tecnicos</a></li>
+                    <li><a href="Equipos.aspx">Equipos</a></li>
+                  </ul>
+                </nav>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
